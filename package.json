@@ -12,7 +12,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "systemd": "/home/ubuntu/.nvm/versions/node/v16.20.2/bin/node index.js",
+    "systemd": "/home/ubuntu/.nvm/versions/node/v16.20.2/bin/npm start ",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
