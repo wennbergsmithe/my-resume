@@ -13,7 +13,7 @@
   },
   "scripts": {
     "systemd": "/home/ubuntu/.nvm/versions/node/v16.20.2/bin/npm start ",
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
