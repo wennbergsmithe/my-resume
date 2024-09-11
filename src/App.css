@@ -1,38 +1,73 @@
-.App {
+/* src/App.css */
+
+.resume-container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+header {
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1 {
+  margin-bottom: 0;
+  font-size: 2.5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header p {
+  margin-top: 5px;
+  color: gray;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.resume-section {
+  margin-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.resume-section h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.resume-item {
+  margin-bottom: 20px;
 }
+
+.resume-item h3 {
+  margin-bottom: 5px;
+  font-size: 1.5em;
+}
+
+.resume-item p {
+  margin-bottom: 5px;
+  color: gray;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sub-skills {
+}
+
+.skills-list  {
+  display: inline-block;
+  margin-right: 15px;
+  background: #eee;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
