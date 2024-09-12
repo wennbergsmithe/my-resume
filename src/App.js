@@ -146,11 +146,13 @@ function App() {
             <li>React</li>
             <li>TypeScript</li>
             <li>MySQL</li>
+            <li>Hibernate</li>
             <li>PostgreSQL</li>
             <li>S3</li>
             <li>EC2</li>
             <li>RDS</li>
             <li>Redis</li>
+            <li>RESTful APIs</li>
           </ul>
         )}
       </section>
