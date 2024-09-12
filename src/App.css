@@ -43,9 +43,19 @@ header p {
   font-size: 1.5em;
   cursor: pointer;
   color: solid #333;
+  display: flex;
+  align-items: center;
 }
 .resume-section h2:hover {
   text-decoration: underline;
+}
+.resume-section h2 .fa-icon {
+  margin-left: 8px;
+}
+
+.section-icon {
+  font-size: 16px;
+  margin-left: 8px;
 }
 
 .resume-item {

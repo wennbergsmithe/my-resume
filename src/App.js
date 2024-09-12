@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
+
 
 function App() {
   const [sections, setSections] = useState({
@@ -15,6 +19,8 @@ function App() {
       [section]: !prevState[section],
     }));
   };
+
+  const getIcon = (isOpen) => (isOpen ? faChevronDown : faChevronRight);
 
   return (
     <div className="resume-container">
@@ -43,7 +49,7 @@ function App() {
 
       <section className="resume-section">
         <h2 onClick={() => toggleSection('about')} style={{ cursor: 'pointer' }}>
-          About Me
+         About Me <FontAwesomeIcon icon={getIcon(sections.about) }  className="section-icon" />
         </h2>
         {sections.about && (
           <p>
@@ -64,7 +70,7 @@ function App() {
           onClick={() => toggleSection('experience')}
           style={{ cursor: 'pointer' }}
         >
-          Experience
+          Experience <FontAwesomeIcon icon={getIcon(sections.experience)} className="section-icon" />
         </h2>
         {sections.experience && (
           <>
@@ -128,7 +134,7 @@ function App() {
           onClick={() => toggleSection('education')}
           style={{ cursor: 'pointer' }}
         >
-          Education
+          Education <FontAwesomeIcon icon={getIcon(sections.education)} className="section-icon" />
         </h2>
         {sections.education && (
           <div className="resume-item">
@@ -148,7 +154,7 @@ function App() {
           onClick={() => toggleSection('skills')}
           style={{ cursor: 'pointer' }}
         >
-          Skills
+          Skills <FontAwesomeIcon icon={getIcon(sections.skills)} className="section-icon" />
         </h2>
         {sections.skills && (
           <ul className="skills-list">
