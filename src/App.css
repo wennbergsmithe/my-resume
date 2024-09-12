@@ -64,17 +64,13 @@ header p {
   margin-bottom: 15px;
 }
 
-.sub-skills {
-  margin-top: 5px;
-}
-
-.skills-list {
+.skills-list li {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 15px;
+  margin-bottom: 15px;
   background: #eee;
   padding: 5px 10px;
   border-radius: 5px;
-  font-size: 0.9em;
 }
 
 a {

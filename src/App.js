@@ -72,28 +72,20 @@ function App() {
 
       <section className="resume-section">
         <h2>Skills</h2>
-        <ul>
-          <li className="skills-list">Java</li>
-            <ul className="sub-skills">
-              <li>Spring Boot</li>
-            </ul>
-          <li className="skills-list">JavaScript</li>
-          <ul className="sub-skills">
-              <li>Node.js</li>
-              <li>Express.js</li>
-              <li>TypeScript</li>
-            </ul>
-          <li className="skills-list">Relational Databases</li>
-            <ul className="sub-skills">
-              <li>MySQL</li>
-              <li>PostgreSQL</li>
-            </ul>
-          <li className="skills-list">AWS</li>
-            <ul className="sub-skills">
-              <li>S3</li>
-              <li>EC2</li>
-              <li>RDS</li>
-            </ul>
+        <ul className="skills-list">
+          <li>Spring Boot</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>Shell Scripting</li>
+          <li >JavaScript</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>TypeScript</li>
+          <li>MySQL</li>
+          <li>PostgreSQL</li>
+          <li>S3</li>
+          <li>EC2</li>
+          <li>RDS</li>
         </ul>
       </section>
 
