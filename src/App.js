@@ -68,7 +68,7 @@ function App() {
             <ul className="sub-skills">
               <li>Spring Boot</li>
             </ul>
-          <li className="skills-list"><b>JavaScript</b></li>
+          <li className="skills-list">JavaScript</li>
           <ul className="sub-skills">
               <li>Node.js</li>
               <li>Express.js</li>
@@ -88,14 +88,14 @@ function App() {
         </ul>
       </section>
 
-      <section className="resume-section">
+      {/* <section className="resume-section">
         <h2>Projects</h2>
         <div className="resume-item">
           <h3>Project Title</h3>
           <p>Brief description of the project and your role in it.</p>
           <a href="http://link-to-project.com" target="_blank" rel="noopener noreferrer">View Project</a>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
