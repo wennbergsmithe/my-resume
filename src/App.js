@@ -165,6 +165,7 @@ function App() {
             <li>JavaScript</li>
             <li>Node.js</li>
             <li>Express.js</li>
+            <li>React.js</li>
             <li>TypeScript</li>
             <li>MySQL</li>
             <li>PostgreSQL</li>
