@@ -32,7 +32,7 @@ function App() {
     <div className="resume-container">
       <header>
         <h1>Eli Wennberg-Smith</h1>
-        <p>Software Engineer</p>
+        <h2>Software Engineer</h2>
         <p>
           {/* <a href= "mailto: wennbergsmithe@gmail.com"> wennbergsmithe@gmail.com </a> |  */}
           <a href="https://www.linkedin.com/in/elijah-wennberg-smith-757117140/" target="_blank" rel="noopener noreferrer">
