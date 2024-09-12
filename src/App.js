@@ -172,6 +172,7 @@ function App() {
             <li>S3</li>
             <li>EC2</li>
             <li>RDS</li>
+            <li>Redis</li>
           </ul>
         )}
       </section>
