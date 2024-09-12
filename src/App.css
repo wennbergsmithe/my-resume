@@ -141,9 +141,10 @@ a:hover {
 /* Responsive Styles */
 @media (max-width: 768px) {
   .resume-container {
-    width: 100%;
+    width: 95%;
     padding: 15px;
     margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   header h1 {
