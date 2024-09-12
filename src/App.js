@@ -52,7 +52,7 @@ function App() {
         <h2>Education</h2>
         <div className="resume-item">
           <h3>Computer Science, Bachelor of Science</h3>
-          <p>Rensselaer Polyteffffchnic Institute | Class of 2020</p>
+          <p>Rensselaer Polytechnic Institute | Class of 2020</p>
           <ul>
             <li>Data Structures, Algorithms, Web Development, Game Development, Operating Systems, Database Systems.</li>
             <li>Concentrated in Data and AI</li>
