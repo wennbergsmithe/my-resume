@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="resume-container">
       <header>
-        <h1>Elijah Wennberg-Smith</h1>
+        <h1>Eli Wennberg-Smith</h1>
         <p>Software Engineer</p>
         <p>
           {/* <a href= "mailto: wennbergsmithe@gmail.com"> wennbergsmithe@gmail.com </a> |  */}
