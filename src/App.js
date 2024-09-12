@@ -16,6 +16,7 @@ function App() {
     experience: true,
     education: true,
     skills: true,
+    projects: true,
   });
 
   const toggleSection = (section) => {
@@ -154,6 +155,29 @@ function App() {
             <li>Redis</li>
             <li>RESTful APIs</li>
           </ul>
+        )}
+      </section>
+      <section className='resume-section'>
+      <h2 onClick={() => toggleSection('projects')} style={{ cursor: 'pointer' }}>
+          Projects <FontAwesomeIcon icon={getIcon(sections.projects)} className="section-icon" />
+        </h2>
+        {sections.projects && (
+          <div>
+            <h4 className='project-title'>Apple Music Library Analyzer</h4>
+            <ul className='project-info'>
+              <li>A python application that stores Apple Music library information over time and provides lists, metrics, charts and other analyses of the data collected.</li>
+              <li><a href='https://github.com/wennbergsmithe/LibraryAnalyzer' target='_blank' rel="noopener noreferrer">GitHub page.</a></li>
+            </ul>
+
+            <h4 className='project-title'>Car Rental API</h4>
+            <ul className='project-info'>
+              <li>An express.js API that tracks cars owned by a rental agency.</li>
+              <li>Users can create a record of owned cars and their information such as make, model, and mileage.</li>
+              <li>Cars can be rented, and the trips are tracked. Duration and mileage of trip is recorded.</li>
+              <li>It is built with Node.js, Express.js, and PostgreSQL.</li>
+              <li><a href='https://github.com/wennbergsmithe/Car-Rental-API' target='_blank' rel="noopener noreferrer">GitHub page.</a></li>
+            </ul>
+          </div>
         )}
       </section>
     </div>

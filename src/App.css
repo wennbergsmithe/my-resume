@@ -90,6 +90,15 @@ header p {
   border-radius: 5px;
 }
 
+.project-title {
+  margin-bottom: 0px;
+  text-decoration: underline;
+}
+
+.project-info {
+  margin-top: 5px;
+}
+
 a {
   color: #1a0dab;
   text-decoration: none;
@@ -118,6 +127,7 @@ a:hover {
   margin-right: 10px;
   vertical-align: middle;
 }
+
 
 .resume-item h3 {
   display: flex;
