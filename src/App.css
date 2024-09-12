@@ -41,6 +41,11 @@ header p {
   padding-bottom: 5px;
   margin-bottom: 15px;
   font-size: 1.5em;
+  cursor: pointer;
+  color: solid #333;
+}
+.resume-section h2:hover {
+  text-decoration: underline;
 }
 
 .resume-item {
