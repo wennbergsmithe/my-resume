@@ -7,6 +7,8 @@ import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import fanrallyLogo from './images/FR.png';
 import humanInterestLogo from './images/HI.png';
 import ivyComputerLogo from './images/IC.png';
+import linkedInLogo from './images/LinkedInLogo.png';
+import gitHubLogo from './images/GitHubLogo.png';
 
 function App() {
   const [sections, setSections] = useState({
@@ -31,21 +33,13 @@ function App() {
         <h1>Elijah Wennberg-Smith</h1>
         <p>Software Engineer</p>
         <p>
-          Contact: wennbergsmithe@gmail.com |{' '}
-          <a
-            href="https://www.linkedin.com/in/elijah-wennberg-smith-757117140/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>{' '}
-          |{' '}
-          <a
-            href="https://github.com/wennbergsmithe/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
+          Contact: wennbergsmithe@gmail.com | 
+          <a href="https://www.linkedin.com/in/elijah-wennberg-smith-757117140/" target="_blank" rel="noopener noreferrer">
+            <img src={linkedInLogo} alt="LinkedIn" className="linkedin-logo" />
+          </a>
+          |
+          <a href="https://github.com/wennbergsmithe/" target="_blank" rel="noopener noreferrer">
+            <img src={gitHubLogo} alt="GitHub" className="git-logo" />
           </a>
         </p>
       </header>
