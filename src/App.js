@@ -166,6 +166,8 @@ function App() {
             <h4 className='project-title'>Apple Music Library Analyzer</h4>
             <ul className='project-info'>
               <li>A python application that stores Apple Music library information over time and provides lists, metrics, charts and other analyses of the data collected.</li>
+              <li>Data Pipeline that ingests data in batches using an XML file that is parsed, and processed into temporal data and stored into MySQL.</li>
+              <li>Uses Altair visualization library.</li>
               <li><a href='https://github.com/wennbergsmithe/LibraryAnalyzer' target='_blank' rel="noopener noreferrer">GitHub page.</a></li>
             </ul>
 
