@@ -46,6 +46,15 @@ function App() {
             <li>Collaborated with product owners, drafting technical design documents and implementing solutions.</li>
           </ul>
         </div>
+
+        <div className="resume-item">
+          <h3>Software Engineer Intern</h3>
+          <p>Ivy Computer, Inc. | Waterbury Center, VT | Aug 2019 – Aug 2020</p>
+          <ul>
+            <li>Developed full stack Windows applications using Visual Basic 6 and MySQL.</li>
+            <li>Owned and executed numerous projects, including a custom task management system, and deployment automation scripts.</li>
+          </ul>
+        </div>
       </section>
 
       <section className="resume-section">
