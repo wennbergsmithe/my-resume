@@ -69,7 +69,9 @@ function App() {
           <>
             <div className="resume-item">
               <h3>
-                <img src={fanrallyLogo} alt="FanRally Logo" className="company-logo" />
+                <a href="https://www.fanrally.com" target="_blank" rel="noopener noreferrer">
+                  <img src={fanrallyLogo} alt="FanRally Logo" className="company-logo" />
+                </a>
                 Software Engineer
               </h3>
               <p>FanRally, Inc. | Pleasanton, CA | Aug 2022 - Aug 2024</p>
@@ -85,7 +87,9 @@ function App() {
 
             <div className="resume-item">
               <h3>
-                <img src={humanInterestLogo} alt="Human Interest Logo" className="company-logo" />
+                <a href="https://www.humaninterest.com" target="_blank" rel="noopener noreferrer">
+                  <img src={humanInterestLogo} alt="Human Interest Logo" className="company-logo" />
+                </a>
                 Software Engineer - Support Engineer
               </h3>
               <p>Human Interest, Inc. | San Francisco, CA | May 2021 – Jul 2022</p>
@@ -100,7 +104,9 @@ function App() {
 
             <div className="resume-item">
               <h3>
-                <img src={ivyComputerLogo} alt="Ivy Computer Logo" className="company-logo" />
+                <a href='https://www.ivycomputer.com' target='_blank' rel="noopener noreferrer">
+                  <img src={ivyComputerLogo} alt="Ivy Computer Logo" className="company-logo" />
+                </a>
                 Software Engineer Intern
               </h3>
               <p>Ivy Computer, Inc. | Waterbury Center, VT | Aug 2019 – Aug 2020</p>
