@@ -97,6 +97,22 @@ a:hover {
   text-decoration: underline;
 }
 
+.company-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.resume-item h3 {
+  display: flex;
+  align-items: center;
+}
+
+.resume-item h3 img {
+  margin-right: 10px;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .resume-container {

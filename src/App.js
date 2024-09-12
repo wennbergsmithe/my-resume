@@ -3,7 +3,10 @@ import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
-
+// Import company logos
+import fanrallyLogo from './images/FR.png';
+import humanInterestLogo from './images/HI.png';
+import ivyComputerLogo from './images/IC.png';
 
 function App() {
   const [sections, setSections] = useState({
@@ -49,64 +52,42 @@ function App() {
 
       <section className="resume-section">
         <h2 onClick={() => toggleSection('about')} style={{ cursor: 'pointer' }}>
-         About Me <FontAwesomeIcon icon={getIcon(sections.about) }  className="section-icon" />
+          About Me <FontAwesomeIcon icon={getIcon(sections.about)} className="section-icon" />
         </h2>
         {sections.about && (
           <p>
-            Results-driven software engineer with 3+ years of non-internship
-            experience designing and delivering scalable, revenue-generating
-            features. Proficient in Java, Python, JavaScript, RESTful API
-            design, and database management. Proven track record of leading key
-            projects from concept to deployment, improving conversion rates, and
-            driving business insights. Adept at working in Agile environments
-            and committed to developing innovative solutions that meet business
-            objectives.
+            Results-driven software engineer with 3+ years of non-internship experience designing and delivering scalable, revenue-generating features. Proficient in Java, Python, JavaScript, RESTful API design, and database management. Proven track record of leading key projects from concept to deployment, improving conversion rates, and driving business insights. Adept at working in Agile environments and committed to developing innovative solutions that meet business objectives.
           </p>
         )}
       </section>
 
       <section className="resume-section">
-        <h2
-          onClick={() => toggleSection('experience')}
-          style={{ cursor: 'pointer' }}
-        >
+        <h2 onClick={() => toggleSection('experience')} style={{ cursor: 'pointer' }}>
           Experience <FontAwesomeIcon icon={getIcon(sections.experience)} className="section-icon" />
         </h2>
         {sections.experience && (
           <>
             <div className="resume-item">
-              <h3>Software Engineer</h3>
+              <h3>
+                <img src={fanrallyLogo} alt="FanRally Logo" className="company-logo" />
+                Software Engineer
+              </h3>
               <p>FanRally, Inc. | Pleasanton, CA | Aug 2022 - Aug 2024</p>
               <ul>
-                <li>
-                  Led the end-to-end development of core platform features using
-                  Spring Boot Java, and continuously maintained existing
-                  systems.
-                </li>
+                <li>Led the end-to-end development of core platform features using Spring Boot Java, and continuously maintained existing systems.</li>
                 <li>Wrote comprehensive test suites for all new features launched.</li>
-                <li>
-                  Solely developed and maintained a dynamic fee service,
-                  generating thousands in additional revenue by charging custom
-                  fees on all platform transactions.
-                </li>
-                <li>
-                  Led the creation of a real-time SMS communication service,
-                  increasing conversion rates by 10% through personalized
-                  messaging and promotions.
-                </li>
-                <li>
-                  Spearheaded the development of a self-hosted Metabase page for
-                  real-time business analytics, reducing data retrieval times by
-                  50% and providing critical insights for investor and sales
-                  pitches, contributing to a notable increase in successful
-                  deals.
-                </li>
+                <li>Solely developed and maintained a dynamic fee service, generating thousands in additional revenue by charging custom fees on all platform transactions.</li>
+                <li>Led the creation of a real-time SMS communication service, increasing conversion rates by 10% through personalized messaging and promotions.</li>
+                <li>Spearheaded the development of a self-hosted Metabase page for real-time business analytics, reducing data retrieval times by 50% and providing critical insights for investor and sales pitches, contributing to a notable increase in successful deals.</li>
                 <li>Provided on-call engineering support, directly resolving high-priority client issues.</li>
               </ul>
             </div>
 
             <div className="resume-item">
-              <h3>Software Engineer - Support Engineer</h3>
+              <h3>
+                <img src={humanInterestLogo} alt="Human Interest Logo" className="company-logo" />
+                Software Engineer - Support Engineer
+              </h3>
               <p>Human Interest, Inc. | San Francisco, CA | May 2021 – Jul 2022</p>
               <ul>
                 <li>Primary defender against escalated customer issues with the recordkeeping system.</li>
@@ -118,7 +99,10 @@ function App() {
             </div>
 
             <div className="resume-item">
-              <h3>Software Engineer Intern</h3>
+              <h3>
+                <img src={ivyComputerLogo} alt="Ivy Computer Logo" className="company-logo" />
+                Software Engineer Intern
+              </h3>
               <p>Ivy Computer, Inc. | Waterbury Center, VT | Aug 2019 – Aug 2020</p>
               <ul>
                 <li>Developed full stack Windows applications using Visual Basic 6 and MySQL.</li>
@@ -130,10 +114,7 @@ function App() {
       </section>
 
       <section className="resume-section">
-        <h2
-          onClick={() => toggleSection('education')}
-          style={{ cursor: 'pointer' }}
-        >
+        <h2 onClick={() => toggleSection('education')} style={{ cursor: 'pointer' }}>
           Education <FontAwesomeIcon icon={getIcon(sections.education)} className="section-icon" />
         </h2>
         {sections.education && (
@@ -150,10 +131,7 @@ function App() {
       </section>
 
       <section className="resume-section">
-        <h2
-          onClick={() => toggleSection('skills')}
-          style={{ cursor: 'pointer' }}
-        >
+        <h2 onClick={() => toggleSection('skills')} style={{ cursor: 'pointer' }}>
           Skills <FontAwesomeIcon icon={getIcon(sections.skills)} className="section-icon" />
         </h2>
         {sections.skills && (
@@ -176,15 +154,6 @@ function App() {
           </ul>
         )}
       </section>
-
-      {/* <section className="resume-section">
-        <h2>Projects</h2>
-        <div className="resume-item">
-          <h3>Project Title</h3>
-          <p>Brief description of the project and your role in it.</p>
-          <a href="http://link-to-project.com" target="_blank" rel="noopener noreferrer">View Project</a>
-        </div>
-      </section> */}
     </div>
   );
 }
