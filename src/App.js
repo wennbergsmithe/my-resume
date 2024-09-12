@@ -33,7 +33,7 @@ function App() {
         <h1>Elijah Wennberg-Smith</h1>
         <p>Software Engineer</p>
         <p>
-          Contact: wennbergsmithe@gmail.com | 
+          {/* <a href= "mailto: wennbergsmithe@gmail.com"> wennbergsmithe@gmail.com </a> |  */}
           <a href="https://www.linkedin.com/in/elijah-wennberg-smith-757117140/" target="_blank" rel="noopener noreferrer">
             <img src={linkedInLogo} alt="LinkedIn" className="linkedin-logo" />
           </a>
