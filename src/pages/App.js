@@ -9,7 +9,7 @@ function App() {
     <Router>
       <div className="app">
         <nav className="navbar">
-          <div className="navbar-brand">My Portfolio</div>
+          <div className="navbar-brand">SpinPuppy</div>
           <ul className="navbar-links">
             <li>
               <Link to="/">Home</Link>

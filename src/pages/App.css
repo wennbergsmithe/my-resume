@@ -1,7 +1,8 @@
 /* src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
@@ -11,16 +12,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  padding: 10px 20px;
-  margin : 10px;
-  border-radius: 8px;
+  background-color: #f4f4f4;
+  padding: 15px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   margin-bottom: 30px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-brand {
   font-size: 1.5em;
-  color: #fff;
+  color: #000000;
   font-weight: bold;
 }
 
@@ -36,7 +39,7 @@ body {
 }
 
 .navbar-links a {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
   font-size: 1em;
   padding: 5px 10px;
@@ -45,7 +48,7 @@ body {
 }
 
 .navbar-links a:hover {
-  background-color: #555;
+  background-color: #b8b8b8;
 }
 
 .navbar-links a.active {

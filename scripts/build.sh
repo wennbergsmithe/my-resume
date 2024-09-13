@@ -15,6 +15,14 @@ else
   exit 1
 fi
 
+npm install
+if [ \$? -eq 0 ]; then
+  echo "$(date): Successfully installed dependencies."
+else
+  echo "$(date): Failed to install dependencies."
+  exit 1
+fi
+
 # Reload systemd daemon
 sudo systemctl daemon-reload
 if [ \$? -eq 0 ]; then
