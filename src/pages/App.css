@@ -31,6 +31,11 @@ body {
   font-weight: bold;
 }
 
+.spin-puppy-logo {
+  width: 30px;
+  height: 30px;
+}
+
 .navbar-links {
   list-style: none;
   display: flex;

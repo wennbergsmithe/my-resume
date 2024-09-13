@@ -4,12 +4,18 @@ import Home from './Home';
 import NewPage from '../pages/NewPage';
 import './App.css';
 
+
+import blackDog from '../images/dogBlack.png';
+
+
 function App() {
   return (
     <Router>
       <div className="app">
         <nav className="navbar">
-          <div className="navbar-brand">SpinPuppy</div>
+          <div className="navbar-brand">
+          <img src={blackDog} alt="SpinPuppy" className="spin-puppy-logo" />
+          </div>
           <ul className="navbar-links">
             <li>
               <Link to="/">Home</Link>
