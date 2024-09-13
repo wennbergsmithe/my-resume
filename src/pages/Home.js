@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import './App.css';
+import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 // Import company logos
-import fanrallyLogo from './images/FR.png';
-import humanInterestLogo from './images/HI.png';
-import ivyComputerLogo from './images/IC.png';
-import linkedInLogo from './images/LinkedInLogo.png';
-import gitHubLogo from './images/GitHubLogo.png';
+import fanrallyLogo from '../images/FR.png';
+import humanInterestLogo from '../images/HI.png';
+import ivyComputerLogo from '../images/IC.png';
+import linkedInLogo from '../images/LinkedInLogo.png';
+import gitHubLogo from '../images/GitHubLogo.png';
 
-function App() {
+function Home() {
   const [sections, setSections] = useState({
     about: true,
     experience: true,
@@ -186,4 +186,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
