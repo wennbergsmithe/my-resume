@@ -10,7 +10,7 @@ import ivyComputerLogo from '../images/IC.png';
 import linkedInLogo from '../images/LinkedInLogo.png';
 import gitHubLogo from '../images/GitHubLogo.png';
 
-function Home() {
+function Resume() {
   const [sections, setSections] = useState({
     about: true,
     experience: true,
@@ -186,4 +186,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Resume;
