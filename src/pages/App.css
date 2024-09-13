@@ -55,6 +55,10 @@ body {
   background-color: #b8b8b8;
 }
 
+.spin-puppy-logo a:hover {
+  background-color: #b8b8b8;
+}
+
 .navbar-links a.active {
   background-color: #007bff;
   color: #fff;

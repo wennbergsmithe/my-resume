@@ -14,11 +14,11 @@ function App() {
       <div className="app">
         <nav className="navbar">
           
-          <img src={blackDog} alt="SpinPuppy" className="spin-puppy-logo" />
+          <Link to="/"><img src={blackDog} alt="SpinPuppy" className="spin-puppy-logo" /></Link>
           
           <ul className="navbar-links">
             <li>
-              <Link to="/">Resume</Link>
+              {/* <Link to="/">Resume</Link> */}
             </li>
             {/* <li>
               <Link to="/newpage">New Page</Link>
