@@ -31,15 +31,20 @@ function Resume() {
   return (
     <div className="resume-container">
       <header>
-        <h1>Eli Wennberg-Smith</h1>
-        <h2>Software Engineer</h2>
+        <div className='titles'>
+          <h1>Eli Wennberg-Smith</h1>
+          <h2>Software Engineer</h2>
+        </div>
           {/* <a href= "mailto: wennbergsmithe@gmail.com"> wennbergsmithe@gmail.com </a> |  */}
-          <a href="https://www.linkedin.com/in/elijah-wennberg-smith-757117140/" target="_blank" rel="noopener noreferrer">
-            <img src={linkedInLogo} alt="LinkedIn" className="linkedin-logo" />
-          </a>
-          <a href="https://github.com/wennbergsmithe/" target="_blank" rel="noopener noreferrer">
-            <img src={gitHubLogo} alt="GitHub" className="git-logo" />
-          </a>
+
+          <div className="socials">
+            <a href="https://www.linkedin.com/in/elijah-wennberg-smith-757117140/" target="_blank" rel="noopener noreferrer">
+              <img src={linkedInLogo} alt="LinkedIn" className="linkedin-logo" />
+            </a>
+            <a href="https://github.com/wennbergsmithe/" target="_blank" rel="noopener noreferrer">
+              <img src={gitHubLogo} alt="GitHub" className="git-logo" />
+            </a>
+          </div>
       </header>
 
       <section className="resume-section">

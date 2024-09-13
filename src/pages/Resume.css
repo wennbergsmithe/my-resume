@@ -17,8 +17,22 @@ body {
 }
 
 header {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.titles {
+  text-align: left;
+  flex: 1; /* Allow titles to take up remaining space */
+}
+
+.socials {
+  text-align: right;
+  flex: 1; /* Allow socials to take up remaining space */
 }
 
 header h1 {
@@ -114,14 +128,14 @@ a:hover {
 }
 
 .linkedin-logo {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   vertical-align: middle;
 }
 
 .git-logo {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   vertical-align: middle;
   padding-left: 5px;
 }
