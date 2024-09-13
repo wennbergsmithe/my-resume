@@ -61,7 +61,7 @@ body {
   color: #fff;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 350px) {
   .navbar {
     padding: 15px 10px; /* Adjust padding for mobile */
     width: 100vw; /* Ensure full viewport width */
