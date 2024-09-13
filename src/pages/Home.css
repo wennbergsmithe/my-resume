@@ -1,5 +1,3 @@
-/* src/App.css */
-
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -8,15 +6,14 @@ body {
 }
 
 .resume-container {
-  width: 90%;
+  width: 100%; /* Ensure full width */
   max-width: 900px;
   margin: 0 auto;
-  margin-bottom: 15px;
-  margin-top: 20px;
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Include padding in width */
 }
 
 header {
@@ -48,9 +45,11 @@ header p {
   display: flex;
   align-items: center;
 }
+
 .resume-section h2:hover {
   text-decoration: underline;
 }
+
 .resume-section h2 .fa-icon {
   margin-left: 8px;
 }
@@ -67,6 +66,12 @@ header p {
 .resume-item h3 {
   margin-bottom: 5px;
   font-size: 1.3em;
+  display: flex;
+  align-items: center;
+}
+
+.resume-item h3 img {
+  margin-right: 10px;
 }
 
 .resume-item p {
@@ -128,23 +133,13 @@ a:hover {
   vertical-align: middle;
 }
 
-
-.resume-item h3 {
-  display: flex;
-  align-items: center;
-}
-
-.resume-item h3 img {
-  margin-right: 10px;
-}
-
 /* Responsive Styles */
 @media (max-width: 768px) {
   .resume-container {
-    width: 95%;
+    width: 95%; /* Reduce width to avoid overflow */
     padding: 15px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   header h1 {
