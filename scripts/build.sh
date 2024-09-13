@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# Parse flags
+INSTALL_DEPENDENCIES=false
+while getopts "i" flag; do
+  case "$flag" in
+    i) INSTALL_DEPENDENCIES=true ;;
+    *) echo "Usage: $0 [-i]"; exit 1 ;;
+  esac
+done
+
 # SSH into the AWS instance
 ssh -i "~/.ssh/california-eli-mbp.pem" ubuntu@ec2-18-224-110-70.us-east-2.compute.amazonaws.com << EOF
 
@@ -15,12 +24,15 @@ else
   exit 1
 fi
 
-# npm install
-if [ \$? -eq 0 ]; then
-  echo "$(date): Successfully installed dependencies."
-else
-  echo "$(date): Failed to install dependencies."
-  exit 1
+# Conditionally run npm install if -i flag was provided
+if [ "$INSTALL_DEPENDENCIES" = true ]; then
+  npm install
+  if [ \$? -eq 0 ]; then
+    echo "$(date): Successfully installed dependencies."
+  else
+    echo "$(date): Failed to install dependencies."
+    exit 1
+  fi
 fi
 
 # Reload systemd daemon
