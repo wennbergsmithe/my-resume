@@ -182,11 +182,15 @@ a:hover {
 
 @media (max-width: 480px) {
   header h1 {
+    font-size: .75em;
+  }
+  
+  header h2 {
     font-size: .5em;
   }
 
   header p {
-    font-size: 0.3em;
+    font-size: 0.9em;
   }
 
   .resume-section h2 {
