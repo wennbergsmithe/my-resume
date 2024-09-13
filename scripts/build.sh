@@ -15,7 +15,7 @@ else
   exit 1
 fi
 
-npm install
+# npm install
 if [ \$? -eq 0 ]; then
   echo "$(date): Successfully installed dependencies."
 else
