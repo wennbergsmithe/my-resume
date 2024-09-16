@@ -49,7 +49,7 @@ function QuickScan() {
 
       <section className="resume-section">
         <h2 onClick={() => toggleSection('about')} style={{ cursor: 'pointer' }}>
-          Disclaimer <FontAwesomeIcon icon={getIcon(sections.about)} className="section-icon" />
+          Quick Scan <FontAwesomeIcon icon={getIcon(sections.about)} className="section-icon" />
         </h2>
         {sections.about && (
           <p>
@@ -90,9 +90,7 @@ function QuickScan() {
               <p>Human Interest, Inc. | San Francisco, CA | May 2021 – Jul 2022</p>
               <ul>
                 <li>Tech used: TypeScript, Node.js, TypeORM, PostgreSQL.</li>
-                <li>Developed a process to quickly and safely resolve issues using live production APIs and data.</li>
-                <li>Dramatically decreased escalation resolution time with custom tooling.</li>
-                <li>Developed automated tools to streamline the resolution of customer escalations using JavaScript and PostgreSQL.</li>
+                <li>Decreased resolution time of escalated issues by 75% with automation.</li>
                 <li>Collaborated with product owners, drafting technical design documents and implementing solutions.</li>
               </ul>
             </div>
@@ -107,7 +105,8 @@ function QuickScan() {
               <p>Ivy Computer, Inc. | Waterbury Center, VT | Aug 2019 – Aug 2020</p>
               <ul>
                 <li>Developed full stack Windows applications using Visual Basic 6 and MySQL.</li>
-                <li>Owned and executed numerous projects, including a custom task management system, and deployment automation scripts.</li>
+                <li>Decreased deployment time by 50% with deployment automation scripts.</li>
+                <li>Dramatically increased workorder organization with a custom task management system.</li>
               </ul>
             </div>
           </>
@@ -155,31 +154,6 @@ function QuickScan() {
             <li>Redis</li>
             <li>RESTful APIs</li>
           </ul>
-        )}
-      </section>
-      <section className='resume-section'>
-      <h2 onClick={() => toggleSection('projects')} style={{ cursor: 'pointer' }}>
-          Projects <FontAwesomeIcon icon={getIcon(sections.projects)} className="section-icon" />
-        </h2>
-        {sections.projects && (
-          <div>
-            <h4 className='project-title'>Apple Music Library Analyzer</h4>
-            <ul className='project-info'>
-              <li>A python application that stores Apple Music library information over time and provides lists, metrics, charts and other analyses of the data collected.</li>
-              <li>Data Pipeline that ingests data in batches using an XML file that is parsed, and processed into temporal data and stored into MySQL.</li>
-              <li>Uses Vega-Altair visualization library.</li>
-              <li><a href='https://github.com/wennbergsmithe/LibraryAnalyzer' target='_blank' rel="noopener noreferrer">GitHub page.</a></li>
-            </ul>
-
-            <h4 className='project-title'>Car Rental API</h4>
-            <ul className='project-info'>
-              <li>An express.js API that tracks cars owned by a rental agency.</li>
-              <li>Users can create a record of owned cars and their information such as make, model, and mileage.</li>
-              <li>Cars can be rented, and the trips are tracked. Duration and mileage of trip is recorded.</li>
-              <li>It is built with Node.js, Express.js, and PostgreSQL.</li>
-              <li><a href='https://github.com/wennbergsmithe/Car-Rental-API' target='_blank' rel="noopener noreferrer">GitHub page.</a></li>
-            </ul>
-          </div>
         )}
       </section>
     </div>

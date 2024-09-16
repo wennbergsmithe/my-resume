@@ -165,6 +165,7 @@ function Resume() {
         </h2>
         {sections.projects && (
           <div>
+
             <h4 className='project-title'>Apple Music Library Analyzer</h4>
             <ul className='project-info'>
               <li>A python application that stores Apple Music library information over time and provides lists, metrics, charts and other analyses of the data collected.</li>
@@ -180,6 +181,13 @@ function Resume() {
               <li>Cars can be rented, and the trips are tracked. Duration and mileage of trip is recorded.</li>
               <li>It is built with Node.js, Express.js, and PostgreSQL.</li>
               <li><a href='https://github.com/wennbergsmithe/Car-Rental-API' target='_blank' rel="noopener noreferrer">GitHub page.</a></li>
+            </ul>
+
+            <h4 className='project-title'>This Resume Page</h4>
+            <ul className='project-info'>
+              <li>Created this React resume page to improve my front end and dev ops experience.</li>
+              <li>Hosted on AWS on an EC2 instance.</li>
+              <li><a href='https://github.com/wennbergsmithe/my-resume' target='_blank' rel="noopener noreferrer">GitHub page.</a></li>
             </ul>
           </div>
         )}

@@ -20,10 +20,10 @@ function App() {
           </li>
           <li>
             {location.pathname !== "/" && (
-              <Link to="/" className="deep-dive">Deep Dive</Link>
+              <Link to="/" className="deep-dive">Go To Deep Dive</Link>
             )}
             {location.pathname !== "/quickscan" && (
-              <Link to="/quickscan" className="quick-scan">Quick Scan</Link>
+              <Link to="/quickscan" className="quick-scan">Go To Quick Scan</Link>
             )}
           </li>
         </ul>
