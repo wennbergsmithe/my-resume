@@ -10,7 +10,7 @@ while getopts "i" flag; do
 done
 
 # SSH into the AWS instance
-ssh -i "~/.ssh/california-eli-mbp.pem" ubuntu@ec2-18-224-110-70.us-east-2.compute.amazonaws.com << EOF
+ssh -i "$SSH_KEY_PATH" ubuntu@ec2-18-224-110-70.us-east-2.compute.amazonaws.com << EOF
 
 # Navigate to the desired directory
 cd my-resume
