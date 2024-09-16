@@ -183,7 +183,7 @@ function Resume() {
               <li><a href='https://github.com/wennbergsmithe/Car-Rental-API' target='_blank' rel="noopener noreferrer">GitHub page.</a></li>
             </ul>
 
-            <h4 className='project-title'>This Resume Page</h4>
+            <h4 className='project-title'>spinpuppy.com</h4>
             <ul className='project-info'>
               <li>Created this React resume page to improve my front end and dev ops experience.</li>
               <li>Hosted on AWS on an EC2 instance.</li>

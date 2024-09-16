@@ -1,0 +1,21 @@
+.qs-container {
+    max-width: 95%;
+    width: 900px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 30px;
+    padding-top: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Include padding in width */
+  }
+
+  @media (max-width: 768px) {
+    .qs-container {
+      
+      padding: 15px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+}
