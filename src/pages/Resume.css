@@ -6,8 +6,8 @@ body {
 }
 
 .resume-container {
-  width: 100%; /* Ensure full width */
-  max-width: 900px;
+  width: 95%; /* Ensure full width */
+  
   margin: 0 auto;
   margin-bottom: 15px;
   padding: 30px;
