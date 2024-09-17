@@ -6,8 +6,8 @@ body {
 }
 
 .resume-container {
-  width: 95%; /* Ensure full width */
-  
+  max-width: 95%; /* Ensure full width */
+  width: 900px;
   margin: 0 auto;
   margin-bottom: 15px;
   padding: 30px;
@@ -165,7 +165,6 @@ a:hover {
 /* Responsive Styles */
 @media (max-width: 768px) {
   .resume-container {
-    width: 95%; /* Reduce width to avoid overflow */
     padding: 15px;
     margin-top: 0;
     margin-bottom: 0;
