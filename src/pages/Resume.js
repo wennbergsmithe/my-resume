@@ -74,10 +74,10 @@ function Resume() {
               <p>FanRally, Inc. | Pleasanton, CA | Aug 2022 - Aug 2024</p>
               <ul>
                 <li>Led the end-to-end development of core platform features using Spring Boot Java, and continuously maintained existing systems.</li>
-                <li>Wrote comprehensive test suites for all new features launched.</li>
                 <li>Solely developed and maintained a dynamic fee service, generating thousands in additional revenue by charging custom fees on all platform transactions.</li>
                 <li>Led the creation of a real-time SMS communication service, increasing conversion rates by 10% through personalized messaging and promotions.</li>
                 <li>Spearheaded the development of a self-hosted Metabase page for real-time business analytics, reducing data retrieval times by 50% and providing critical insights for investor and sales pitches, contributing to a notable increase in successful deals.</li>
+                <li>Wrote comprehensive test suites for all new features launched.</li>
                 <li>Provided on-call engineering support, directly resolving high-priority client issues.</li>
               </ul>
             </div>
