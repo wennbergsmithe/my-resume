@@ -20,14 +20,14 @@ function App() {
             <li>
               {/* <Link to="/">Resume</Link> */}
             </li>
-            {/* <li>
+            <li>
               <Link to="/newpage">New Page</Link>
-            </li> */}
+            </li>
           </ul>
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/newpage" element={<NewPage />} /> */}
+          <Route path="/newpage" element={<NewPage />} />
         </Routes>
       </div>
     </Router>

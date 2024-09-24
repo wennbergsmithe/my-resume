@@ -1,12 +1,15 @@
 // src/pages/NewPage.js
-
+import { GetNowListening } from './LastFMData.jsx';
+import { LastFmData } from './LastFMData.jsx';
 import React from 'react';
 
 function NewPage() {
   return (
     <div className="new-page">
-      <h1>New Page</h1>
-      <p>This is the new page.</p>
+      <GetNowListening
+        userName={'wennbergsmithe'}
+        apiKey={'c9ceb7f3915bf85eae2db94f6dbde629'}
+      />
     </div>
   );
 }
