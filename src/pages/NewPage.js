@@ -8,7 +8,7 @@ function NewPage() {
     <div className="new-page">
       <GetNowListening
         userName={'wennbergsmithe'}
-        apiKey={'c9ceb7f3915bf85eae2db94f6dbde629'}
+        apiKey={process.env.REACT_APP_LASTFM_API_KEY}
       />
     </div>
   );
