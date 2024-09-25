@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-const lastFMAPIKey = process.env.REACT_APP_LASTFM_API_KEY;
-
 export const GetNowListening = ({ userName }) => {
   const [lfmData, updateLfmData] = useState({});
   
@@ -33,11 +31,11 @@ export const GetNowListening = ({ userName }) => {
     const track = lfmData?.recenttracks?.track;
   
     if (error) {
-      return <div className='listening-container'><p>{error}</p>;</div>
+      return <p>{error}</p>;
     }
   
     if (!track) {
-      return <div className='listening-container'><p>Loading</p></div>;
+      return <p>Loading</p>;
     }
   
     // Extract the first track
@@ -47,8 +45,7 @@ export const GetNowListening = ({ userName }) => {
     const imageUrl = image?.find(img => img.size === "medium")?.["#text"] || '';
   
     return (
-      <div>
-        <div className="listening-container">
+      <div className='now-playing'>
           <img 
             src={imageUrl}
             alt={songName} 
@@ -57,7 +54,6 @@ export const GetNowListening = ({ userName }) => {
           <div className="listening-text">
             <p>{songName}</p>
             <p>{artistName}</p>
-          </div>
         </div>
       </div>
     );
@@ -89,16 +85,15 @@ export const GetTopArtists = ({ userName }) => {
     const artists = lfmData?.topartists?.artist;
   
     if (error) {
-      return <div className='top-artists-container'><p>{error}</p>;</div>
+      return <p>{error}</p>;
     }
   
     if (!artists) {
-      return <div className='top-artists-container'><p>Loading</p></div>;
+      return <p>Loading</p>;
     }
   
     return (
-      <div className="top-artists-container">
-        <h3>wennbergsmithe's top artists:</h3>
+      <div>
         <ol>
           {artists.map((artist, index) => {
             const imageUrl = artist?.image?.find(img => img.size === "medium")?.["#text"] || '';
