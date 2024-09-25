@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import Home from './Resume';
-import NewPage from '../pages/NewPage';
+import LastFM from './LastFM';
 import './App.css';
 
 
@@ -18,16 +18,14 @@ function App() {
           
           <ul className="navbar-links">
             <li>
-              {/* <Link to="/">Resume</Link> */}
-            </li>
-            <li>
-              <Link to="/newpage">New Page</Link>
+              <Link to="/musicData">Music Listening Data</Link>
             </li>
           </ul>
         </nav>
+
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/newpage" element={<NewPage />} />
+          <Route path="/musicData" element={<LastFM />} />
         </Routes>
       </div>
     </Router>

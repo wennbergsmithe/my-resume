@@ -1,0 +1,48 @@
+.listening-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a lifted effect */
+    max-width: 400px; /* Adjust width as needed */
+    margin: 20px auto; /* Center the container */
+  }
+  
+  .listening-container img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px; /* Space between image and text */
+    animation: spin 5s linear infinite;
+  }
+  
+  .listening-text p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .listening-text p:first-child {
+    font-weight: bold; /* Make the song title bold */
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  
+  .top-artists-container {
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a lifted effect */
+    max-width: 400px; /* Adjust width as needed */
+    margin: 20px auto; /* Center the container */
+  }
